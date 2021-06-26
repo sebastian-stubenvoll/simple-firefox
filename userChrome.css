@@ -1,0 +1,59 @@
+/* variables */
+:root {
+  /* custom variables */
+   
+
+  /* overrides */
+  --bookmark-block-padding: 6px !important;
+}
+
+/* layout */
+
+#titlebar {
+  -moz-box-ordinal-group: 2;
+}
+
+/* url bar */
+#identity-icon-box, #tracking-protection-icon-container {
+  visibility: collapse;
+}
+
+.urlbar-icon {
+  visibility: collapse;
+}
+
+#urlbar:is([focused="true"], [open]):-moz-lwtheme {
+  color: rbga(0,0,0,0) !important;
+}
+
+
+.browser-toolbar {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#urlbar-input {
+  text-align: center !important;
+}
+
+
+/* bookmark bar */
+
+#personal-toolbar-empty-description, #PersonalToolbar .toolbarbutton-1, toolbarbutton.bookmark-item:not(.subviewbutton) {
+  padding: var(--bookmark-block-padding) !important;
+}
+
+
+/* tabs bar */
+
+.titlebar-buttonbox-container {
+  visibility: collapse; /*hides macOS quit/minimize/fullscreen buttons */
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+  width: 10px !important;
+}
+
+#navigator-toolbox {
+  border-bottom: 0px;
+}
